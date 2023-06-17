@@ -25,7 +25,7 @@
 };
 
 &sl {
-  release-after-ms = <500>;
+  release-after-ms = <200>;
   quick-release;
 };
 
@@ -97,7 +97,7 @@
         layer_game {
             bindings = <
  &trans     &trans    &trans    &trans    &trans    &trans    &trans                                                      &trans     &trans     &trans    &trans   &trans   &trans   &trans
- &trans     &trans    &trans    &trans    &trans    &trans    &trans                                                      &tog 0     &trans     &trans    &trans   &trans   &trans   &trans
+ &trans     &trans    &trans    &trans    &trans    &trans    &trans                                                      &trans     &trans     &trans    &trans   &trans   &trans   &trans
  &kp LCTRL  &trans    &trans    &trans    &trans    &trans    &trans     &trans  &trans                  &trans  &trans   &trans     &trans     &trans    &trans   &trans   &trans   &trans
  &trans     &trans    &trans    &trans    &trans    &trans                       &trans                  &trans                      &trans     &trans    &trans   &trans   &trans   &trans
  &trans     &trans    &trans    &trans    &trans              &kp SPACE  &trans  &trans                  &trans  &trans   &trans     &trans     &trans    &trans   &trans   &trans   &trans
