@@ -15,6 +15,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+
+// &mo doc: 
+// https://zmk.dev/docs/behaviors/layers
+
 &sk {
   release-after-ms = <200>;
   quick-release;
@@ -61,7 +65,7 @@
         &kp TAB      &kp Q   &kp W     &kp E     &kp R   &kp T            &none                                                               &tog 3   &kp Y     &kp U          &kp I    &kp O     &kp P         &kp BSLH
   &kp BACKSPACE      &kp A   &kp S     &kp D     &kp F   &kp G            &none   &kp LALT  &kp DEL                      &none   &kp RALT      &none   &kp H     &kp J          &kp K    &kp L  &kp SEMI          &kp SQT
       &kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                                &none                  &kp PG_UP                         &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
- &kp LEFT_SHIFT  &kp GRAVE   &none  &kp LWIN  &kp LALT                    &sl 2  &kp LCTRL    &none                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp RALT  &kp RIGHT_WIN    &none     &none  &kp RIGHT_SHIFT
+ &kp LEFT_SHIFT  &kp GRAVE   &none  &kp LWIN  &kp LALT                    &mo 2  &kp LCTRL    &none                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp RALT  &kp RIGHT_WIN    &none     &none  &kp RIGHT_SHIFT
             >;
         };
 
@@ -69,7 +73,7 @@
             bindings = <
  &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5              &trans                                                                 &mo 3        &kp N6       &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
    &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T               &none                                                                 &none     &kp EQUAL        &kp N7     &kp N8      &kp N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none  &kp KP_COMMA        &kp N4     &kp N5      &kp N6      &kp KP_PLUS    &kp SQT
+   &kp BACKSPACE &kp A     &kp S     &kp D      &kp F   &kp G               &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none  &kp KP_COMMA        &kp N4     &kp N5      &kp N6      &kp KP_PLUS    &kp SQT
  &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                 &kp HOME                  &kp PG_UP                          &kp KP_DOT        &kp N1     &kp N2      &kp N3    &kp KP_DIVIDE  &kp RSHFT
      &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp SPACE  &kp KP_N0                &kp KP_MULTIPLY         &none     &kp KP_DOT         &kp RBKT      &mo 2
             >;
