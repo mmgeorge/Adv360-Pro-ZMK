@@ -19,7 +19,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 &sk {
-  release-after-ms = 200;
+  release-after-ms = <200>;
   quick-release;
 }; 
 
