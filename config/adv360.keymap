@@ -81,7 +81,7 @@
  &trans          &trans     &kp PG_UP       &kp PG_DN           &trans  &trans                 &trans                                                       &trans      &kp PERCENT  &kp AMPERSAND       &kp MINUS       &kp KP_MULTIPLY              &kp POUND  &trans
  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                 &trans  &trans  &trans                  &trans  &trans       &trans  &kp EXCLAMATION        &kp TAB  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
  &trans       &kp CARET   &kp AT_SIGN       &kp TILDE        &kp GRAVE  &trans                                 &trans                  &trans                            &kp DOLLAR      &kp COLON       &kp EQUAL        &td0        &td1  &trans
- &trans          &trans        &trans          &trans           &trans                         &trans   &mo 1  &trans                  &trans  &trans   &sk RSHIFT                          &trans          &trans                &trans                 &trans  &trans
+ &trans          &trans        &trans          &trans           &trans                         &kp LALT   &mo 1  &trans                  &trans  &trans   &sk RSHIFT                          &trans          &trans                &trans                 &trans  &trans
             >;
         };
 
