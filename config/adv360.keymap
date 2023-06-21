@@ -22,7 +22,7 @@
 // https://zmk.dev/docs/behaviors/layers
 
 &sk {
-  release-after-ms = <200>;
+  release-after-ms = <2000>;
   quick-release;
 };
 
