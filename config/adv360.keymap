@@ -15,6 +15,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define MOD 2
 #define GAME 3
 
 
@@ -24,6 +25,7 @@
 &sk {
   release-after-ms = <2000>;
   quick-release;
+  /delete-property/ ignore-modifiers;
 };
 
 &sl {
@@ -72,7 +74,7 @@
         &kp TAB      &kp Q   &kp W     &kp E     &kp R   &kp T            &none                                                               &tog GAME   &kp Y     &kp U          &kp I    &kp O     &kp P         &kp BSLH
   &kp BACKSPACE      &kp A   &kp S     &kp D     &kp F   &kp G            &none   &kp LALT  &kp DEL                      &none   &kp RALT      &none   &kp H     &kp J          &kp K    &kp L  &kp SEMI          &kp SQT
       &kp LSHFT      &kp Z   &kp X     &kp C     &kp V   &kp B                                &none                  &kp PG_UP                         &kp N     &kp M      &kp COMMA  &kp DOT  &kp FSLH        &kp RSHFT
- &kp LEFT_SHIFT  &kp GRAVE   &none  &kp LWIN  &kp LALT                    &sl 2  &kp LCTRL    &none                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp RALT  &kp RIGHT_WIN    &none     &none  &kp RIGHT_SHIFT
+ &kp LEFT_SHIFT  &kp GRAVE   &none  &kp LWIN  &kp LALT                    &sl MOD  &kp LCTRL    &none                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp RALT  &kp RIGHT_WIN    &none     &none  &kp RIGHT_SHIFT
             >;
         };
 
@@ -89,10 +91,10 @@
         layer_mod {
             bindings = <
  &trans          &trans        &trans          &trans           &trans  &trans            &bootloader                                                  &bootloader           &trans         &trans          &trans                &trans                 &trans  &trans
- &trans          &trans     &kp PG_UP       &kp PG_DN           &trans  &trans                 &trans                                                       &trans      &kp PERCENT  &kp AMPERSAND       &kp MINUS       &kp KP_MULTIPLY              &kp POUND  &trans
- &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans                 &trans  &trans  &trans                  &trans  &trans       &trans  &kp EXCLAMATION        &kp TAB  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
- &trans       &kp CARET   &kp AT_SIGN       &kp TILDE        &kp GRAVE  &trans                                 &trans                  &trans                            &kp DOLLAR      &kp COLON       &kp EQUAL        &td0        &td1  &trans
- &trans          &trans        &trans          &trans           &trans                         &kp LALT   &mo 1  &trans                  &trans  &trans   &sk RSHIFT                          &trans          &trans                &trans                 &trans  &trans
+ &trans          &trans     &kp PG_UP       &kp PG_DN           &trans  &trans            &trans                                                       &trans      &kp PERCENT  &kp AMPERSAND       &kp MINUS       &kp KP_MULTIPLY              &kp POUND  &trans
+ &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans            &trans  &trans    &trans                  &trans  &trans       &trans  &kp EXCLAMATION        &kp TAB  &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+ &trans       &kp CARET   &kp AT_SIGN       &kp TILDE        &kp GRAVE  &trans                              &trans                  &trans                            &kp DOLLAR      &kp COLON       &kp EQUAL        &td0        &td1  &trans
+ &trans          &trans        &trans          &trans           &trans                    &kp LALT   &mo 1  &trans                  &trans  &trans   &sk RSHIFT                          &trans          &trans                &trans                 &trans  &trans
             >;
         };
 
